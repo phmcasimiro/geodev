@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: geodev_postgis
+    restart: always
+    environment:
+      - POSTGRES_USER=geouser
+      - POSTGRES_PASSWORD=geopassword
+      - POSTGRES_DB=basegeo
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

@@ -1,0 +1,292 @@
+/* --- Configurações Gerais e Tipografia --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 1. Top Bar --- */
+.top-bar {
+    background-color: #4caf50; /* Verde idêntico à imagem de inspiração */
+    color: #ffffff;
+    font-size: 0.85rem;
+    padding: 10px 0;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+/* --- 2. Main Header --- */
+.main-header {
+    background-color: #2b3a42; /* Tom escuro elegante */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #4caf50;
+}
+
+.logo small {
+    display: block;
+    font-size: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #bdc3c7;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4caf50;
+}
+
+/* --- 3. Hero Section --- */
+.hero-section {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920'); /* Imagem Tech de fundo */
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0 180px 0; /* Padding inferior maior para acomodar os cards flutuantes */
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(43, 58, 66, 0.85); /* Overlay escuro controlado */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: #e2e8f0;
+    margin-bottom: 35px;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #66bb6a;
+    color: #ffffff;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #4caf50;
+    transform: translateY(-2px);
+}
+
+/* --- 4. Cards Section (Efeito flutuante sobre o Hero) --- */
+.cards-section {
+    position: relative;
+    z-index: 3;
+    margin-top: -100px; /* Faz os cartões subirem e sobreporem o banner */
+    padding-bottom: 60px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1xl));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra suave idêntica à referência */
+    text-align: center;
+    border-top: 5px solid #66bb6a; /* Detalhe verde no topo do card */
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2b3a42;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+/* --- 5. Map Section (Moldura do Aplicativo) --- */
+.map-section {
+    padding: 60px 0;
+    background-color: #f9fbf9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2b3a42;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #777777;
+}
+
+.map-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.map-header {
+    background-color: #f1f5f9;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    color: #475569;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    box-shadow: 0 0 8px #22c55e;
+}
+
+/* Redefinição da altura fixa para o mapa acoplado */
+#map {
+    width: 100%;
+    height: 600px; /* Altura ideal de visualização interna */
+}
+
+/* --- 6. About Section --- */
+.about-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text .subtitle {
+    color: #4caf50;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #2b3a42;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #555555;
+    font-size: 1.05rem;
+}

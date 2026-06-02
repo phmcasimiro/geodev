@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoDev - Análise e Visualização Espacial</title>
+    <title>GeoDev - Engenharia de Dados & Inteligência Artificial</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
@@ -11,7 +11,7 @@
           
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,12 +20,12 @@
     <div class="top-bar">
         <div class="container top-bar-container">
             <div class="contact-info">
-                <span>📧 contato@geodev.com.br</span>
-                <span>📍 Brasília - DF</span>
+                <span><img src="img/o-email.png" alt="Email" class="contact-icon" /> phmcasimiro@gmail.com</span>
+                <span><img src="img/brasil.png" alt="Localização" class="contact-icon" /> Brasília - Brasil</span>
             </div>
             <div class="social-links">
-                <a href="https://github.com/phmcasimiro/geodev" target="_blank">GitHub</a>
-                <a href="#" target="_blank">LinkedIn</a>
+                <a href="https://github.com/phmcasimiro/geodev" target="_blank">Enterprise GitHub</a>
+                <a href="https://www.linkedin.com/in/phmcasimiro/" target="_blank">Corporate LinkedIn</a>
             </div>
         </div>
     </div>
@@ -33,12 +33,13 @@
     <header class="main-header">
         <div class="container header-container">
             <div class="logo">
-                Geo<span>Dev</span> <small>Análise Espacial</small>
+                Geo<span>Dev</span> <small>Data & AI Architecture</small>
             </div>
             <nav class="nav-links">
                 <a href="#inicio">Início</a>
-                <a href="#mapa">Visualizador</a>
-                <a href="#sobre">Sobre</a>
+                <a href="#solucoes">Soluções</a>
+                <a href="#mapa">Web GIS</a>
+                <a href="#sobre">Institucional</a>
             </nav>
         </div>
     </header>
@@ -46,46 +47,77 @@
     <section id="inicio" class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Excelência Técnica Em<br>Engenharia de Dados Geográficos</h1>
-            <p>Visualização interativa e otimizada de malhas territoriais utilizando arquitetura moderna com PostGIS, FastAPI e mapas vetoriais de alta performance.</p>
-            <a href="#mapa" class="btn-cta">EXPLORAR MAPA INTERATIVO</a>
+            <h1>Arquitetura de Soluções Baseadas<br>em Dados e Inteligência Artificial</h1>
+            <p>Sistemas corporativos sob medida: Engenharia de Dados Escalonável, Modelos Preditivos de Machine Learning, Visão Computacional Avançada e Orquestração de Agentes com IA Generativa.</p>
+            <p>Transformamos dados complexos e informações geoespaciais em ativos estratégicos para a tomada de decisões automatizadas de alto nível.</p>
+            <a href="#solucoes" class="btn-cta">CONHECER NOSSO PORTFÓLIO</a>
         </div>
     </section>
 
     <section class="cards-section">
         <div class="container cards-container">
-            
             <div class="feature-card">
                 <div class="card-icon">🗄️</div>
-                <h3>PostGIS</h3>
-                <p>Armazenamento espacial robusto com indexação GiST, realizando transformações de geometrias complexas diretamente no banco de dados.</p>
+                <h3>Engenharia Espacial</h3>
+                <p>Modelagem de dados complexos com PostGIS e indexação GiST, rodando transformações geométricas e análises geográficas direto no banco.</p>
             </div>
-
             <div class="feature-card">
                 <div class="card-icon">⚡</div>
-                <h3>FastAPI</h3>
-                <p>Construção de endpoints assíncronos e de alta velocidade para entrega de dados no padrão internacional GeoJSON FeatureCollection.</p>
+                <h3>APIs de Alta Performance</h3>
+                <p>Microsserviços assíncronos construídos em FastAPI rodando processamento em lote e barramentos de dados de ultra velocidade.</p>
             </div>
-
             <div class="feature-card">
-                <div class="card-icon">🗺️</div>
-                <h3>Leaflet.js</h3>
-                <p>Renderização de camadas vetoriais interativas no ambiente web (client-side), com carregamento fluido e popups responsivos.</p>
+                <div class="card-icon">🤖</div>
+                <h3>Inteligência Artificial</h3>
+                <p>Modelos preditivos integrados a esteiras de CI/CD e agentes LLM focados em automação inteligente de fluxos operacionais.</p>
             </div>
+        </div>
+    </section>
 
+    <section id="solucoes" class="solutions-hub-section" style="padding: 80px 0; background-color: #ffffff;">
+        <div class="container">
+            <div class="section-title" style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 2rem; color: #2b3a42;">Ecossistema de Soluções Inteligentes</h2>
+                <p style="color: #777777;">Sistemas especialistas implantados e operacionais focados em resolver desafios complexos de mercado.</p>
+            </div>
+            
+            <div class="solutions-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1xl)); gap: 30px;">
+                
+                <div class="solution-item-card" style="background: #f9fbf9; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #4caf50;">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: #4caf50; uppercase; display: block; margin-bottom: 5px;">GDSBR Engine</span>
+                    <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; color: #2b3a42; margin-bottom: 15px;">Gestão de Conhecimento e Agentes de Notícias</h4>
+                    <p style="font-size: 0.9rem; color: #555555; margin-bottom: 15px;">Módulo inteligente baseado em IA Generativa para varredura automatizada, filtragem e sumarização de dados públicos de segurança e inteligência de mercado.</p>
+                    <small style="color: #777777; display: block;"><b>Stack:</b> LLM Orchestration, Redis, FastAPI, Streamlit.</small>
+                </div>
+
+                <div class="solution-item-card" style="background: #f9fbf9; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #4caf50;">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: #4caf50; uppercase; display: block; margin-bottom: 5px;">FraudDetection Platform</span>
+                    <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; color: #2b3a42; margin-bottom: 15px;">Modelagem Preditiva & Prevenção de Fraudes</h4>
+                    <p style="font-size: 0.9rem; color: #555555; margin-bottom: 15px;">Pipeline completo de Machine Learning especializado em detectar anomalias e transações de alto risco, integrado com monitoramento contínuo e automação.</p>
+                    <small style="color: #777777; display: block;"><b>Stack:</b> Python, ML Pipelines, CI/CD, Model Monitoring.</small>
+                </div>
+
+                <div class="solution-item-card" style="background: #f9fbf9; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #4caf50;">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: #4caf50; uppercase; display: block; margin-bottom: 5px;">Computer Vision Suite</span>
+                    <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; color: #2b3a42; margin-bottom: 15px;">Análise Biométrica e Detecção de Poses</h4>
+                    <p style="font-size: 0.9rem; color: #555555; margin-bottom: 15px;">Solução focada em processamento de vídeo e imagem na ponta (Edge) para detecção de silhuetas, correções posturais em tempo real e análise biomecânica adaptativa.</p>
+                    <small style="color: #777777; display: block;"><b>Stack:</b> Flutter, Google ML Kit, MediaPipe Engine.</small>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section id="mapa" class="map-section">
         <div class="container">
             <div class="section-title">
-                <h2>Visualizador de Malhas Territoriais</h2>
-                <p>Consumindo dados dinâmicos do banco geográfico através da nossa API restrita.</p>
+                <h2>Módulo Web GIS - Visualizador Geográfico</h2>
+                <p>Demonstração em tempo real de consumo de dados espaciais corporativos via APIs restritas.</p>
             </div>
             
             <div class="map-wrapper">
                 <div class="map-header">
-                    <span class="status-dot"></span> <b>Live Demo:</b> Malha de UFs do Brasil (IBGE)
+                    <span class="status-dot"></span> <b>Live Demo:</b> Malha de UFs do Brasil (Camada Vetorial)
                 </div>
                 <div id="map"></div>
             </div>
@@ -95,10 +127,10 @@
     <section id="sobre" class="about-section">
         <div class="container about-container">
             <div class="about-text">
-                <span class="subtitle">Sobre o Projeto</span>
-                <h2>Compromisso Com a Precisão E Com a Ciência Geográfica</h2>
-                <p>O GeoDev nasceu da união entre a expertise da Ciência Geográfica e as práticas avançadas da Engenharia de Software. O projeto foi projetado para demonstrar viabilidade técnica no processamento distribuído de dados espaciais.</p>
-                <p>Focado em escalabilidade, a infraestrutura separa de forma limpa a camada de persistência geográfica, as rotas de entrega de microsserviços e a renderização leve no navegador do usuário final.</p>
+                <span class="subtitle">Quem Somos</span>
+                <h2>Sinfonia entre Ciência Geográfica e Engenharia de Software Avançada</h2>
+                <p>A <b>GeoDev</b> opera como uma fábrica de soluções analíticas focada na entrega de arquiteturas eficientes, portáveis (via ecossistemas conteinerizados em Docker) e altamente escaláveis.</p>
+                <p>Nossa filosofia baseia-se na eliminação do ruído tecnológico: desenhamos desde a governança rigorosa de dados relacionais espaciais até o deploy automatizado de microserviços inteligentes que utilizam IA de última geração para apoiar lideranças na tomada de decisões.</p>
             </div>
         </div>
     </section>

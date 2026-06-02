@@ -39,6 +39,15 @@ body {
 
 .contact-info span {
     margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-info .contact-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 8px;
 }
 
 .social-links a {
